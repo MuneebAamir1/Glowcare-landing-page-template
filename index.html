@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlowCare Clinic - Luxury Skincare</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Manrope:wght@300;500&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <a href="#home" class="logo anim-fade-in" style="--delay: 0.1s;">GlowCare Clinic</a>
+            
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item anim-fade-in" style="--delay: 0.3s;"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item anim-fade-in" style="--delay: 0.4s;"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item anim-fade-in" style="--delay: 0.5s;"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item anim-fade-in" style="--delay: 0.6s;"><a href="#results" class="nav-link">Results</a></li>
+                    <li class="nav-item anim-fade-in" style="--delay: 0.7s;"><a href="#reviews" class="nav-link">Reviews</a></li>
+                    <li class="nav-item anim-fade-in" style="--delay: 0.8s;"><a href="#contact-luxe-section" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <a href="#contact-luxe-section" class="cta-button-header anim-fade-in" style="--delay: 1s;">Book Free Consultation</a>
+
+            <button class="burger-menu" aria-label="Toggle Navigation">
+                <span class="burger-bar"></span>
+                <span class="burger-bar"></span>
+                <span class="burger-bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-nav-overlay">
+        <button class="close-mobile-nav">&times;</button>
+        <nav>
+            <ul>
+                <li><a href="#home" class="mobile-nav-link">Home</a></li>
+                <li><a href="#about" class="mobile-nav-link">About</a></li>
+                <li><a href="#services" class="mobile-nav-link">Services</a></li>
+                <li><a href="#results" class="mobile-nav-link">Results</a></li>
+                <li><a href="#reviews" class="mobile-nav-link">Reviews</a></li>
+                <li><a href="#contact-luxe-section" class="mobile-nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main id="home">
+        <section class="hero">
+            <div class="hero-background">
+                <div class="orb orb-1"></div>
+                <div class="orb orb-2"></div>
+                <div class="orb orb-3"></div>
+            </div>
+
+            <div class="floating-image-container" data-scroll-speed="0.1">
+                <img src="https://placehold.co/400x600/F8C8DC/FFFFFF?text=GlowSerum" alt="Luxury Skincare Product">
+            </div>
+
+            <div class="floating-testimonial" data-scroll-speed="-0.05">
+                <p>"A truly magical experience..."</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            
+            <div class="hero-content">
+                <div class="content-inner">
+                    <h1>
+                        <span class="word">Reclaim</span>
+                        <span class="word">Your</span>
+                        <span class="word">Glow</span>
+                    </h1>
+                    <p class="subheading">Advanced Skincare Crafted Just for You</p>
+                    <a href="#contact" class="cta-button-hero">Book Free Consultation</a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- <div id="about" style="height: 100vh;"> -->
+            <section id="about" class="why-choose-us">
+    <div class="particle-bg">
+        <span class="particle"></span><span class="particle"></span><span class="particle"></span>
+        <span class="particle"></span><span class="particle"></span><span class="particle"></span>
+    </div>
+
+    <div class="collage-panel" data-parallax-speed="-0.1">
+        <div class="image-container shape-1 anim-element">
+            <img src="https://placehold.co/600x800/F8C8DC/ffffff?text=Our+Clinic" alt="Interior of GlowCare Clinic">
+            <div class="hover-reveal-text"><span>A Serene Escape</span></div>
+        </div>
+        <div class="image-container shape-2 anim-element">
+            <img src="https://placehold.co/600x600/A8E6CF/ffffff?text=Our+Tech" alt="Advanced skincare technology">
+            <div class="hover-reveal-text"><span>Cutting-Edge Tech</span></div>
+        </div>
+        <div class="image-container shape-3 anim-element">
+            <img src="https://placehold.co/600x900/E6E6FA/ffffff?text=Our+Experts" alt="An aesthetician at GlowCare Clinic">
+            <div class="hover-reveal-text"><span>Meet Our Experts</span></div>
+        </div>
+    </div>
+
+    <div class="text-panel" data-parallax-speed="0.1">
+        <div class="glass-panel anim-element">
+            <h2 class="section-title">Why Choose Us?</h2>
+            <ul class="values-list">
+                <li class="value-item">
+                    <div class="item-icon"><i class="fas fa-heart"></i></div>
+                    <div class="item-text">
+                        <h3>Our Mission of Care</h3>
+                        <p>We are dedicated to enhancing your natural beauty through personalized, compassionate care.</p>
+                    </div>
+                </li>
+                <li class="value-item">
+                    <div class="item-icon"><i class="fas fa-user-md"></i></div>
+                    <div class="item-text">
+                        <h3>Experienced Aestheticians</h3>
+                        <p>Our team consists of industry-leading dermatologists and skincare experts.</p>
+                    </div>
+                </li>
+                <li class="value-item">
+                    <div class="item-icon"><i class="fas fa-certificate"></i></div>
+                    <div class="item-text">
+                        <h3>Advanced Technology</h3>
+                        <p>We use only the latest, globally trusted products and cutting-edge equipment for superior results.</p>
+                    </div>
+                </li>
+                <li class="value-item">
+                    <div class="item-icon"><i class="fas fa-ruler-combined"></i></div>
+                    <div class="item-text">
+                        <h3>Customized Plans</h3>
+                        <p>Every treatment plan is tailored to your unique skin type, goals, and lifestyle.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+        <!-- </div> -->
+        <!-- <div id="services" style="height: 100vh;"> -->
+            <section id="services" class="services-section">
+    <div class="services-bg">
+        <div class="bubble bubble-1"></div>
+        <div class="bubble bubble-2"></div>
+        <div class="bubble bubble-3"></div>
+        <div class="bubble bubble-4"></div>
+        <div class="bubble bubble-5"></div>
+        <i class="fas fa-vial floating-icon icon-1"></i>
+        <i class="fas fa-spa floating-icon icon-2"></i>
+    </div>
+
+    <div class="services-container">
+        <div class="section-header anim-group">
+            <h2 class="section-title">Our Signature Services</h2>
+            <p class="section-subtitle">Discover treatments where science meets serenity, tailored for unparalleled results.</p>
+        </div>
+
+        <div class="premium-grid">
+            <div class="service-card-premium anim-group">
+                <div class="card-icon"><i class="fas fa-magic"></i></div>
+                <h3 class="card-title">HydraGlow Facial</h3>
+                <p class="card-tagline">Deep hydration for a dewy, luminous finish.</p>
+                <div class="card-glow-trail"></div>
+            </div>
+            <div class="service-card-premium anim-group">
+                <div class="card-icon"><i class="fas fa-sun"></i></div>
+                <h3 class="card-title">Lumière LED Therapy</h3>
+                <p class="card-tagline">Target acne and aging with precision light.</p>
+                <div class="card-glow-trail"></div>
+            </div>
+            <div class="service-card-premium anim-group">
+                <div class="card-icon"><i class="fas fa-gem"></i></div>
+                <h3 class="card-title">Diamond Microderm</h3>
+                <p class="card-tagline">Reveal smoother, younger-looking skin.</p>
+                <div class="card-glow-trail"></div>
+            </div>
+            <div class="service-card-premium anim-group">
+                <div class="card-icon"><i class="fas fa-feather-alt"></i></div>
+                <h3 class="card-title">Cryo-Contour Lift</h3>
+                <p class="card-tagline">A non-invasive lift for a firm, sculpted look.</p>
+                <div class="card-glow-trail"></div>
+            </div>
+        </div>
+
+        <div class="carousel-container anim-group">
+            <div class="services-carousel-wrapper">
+                <div class="services-carousel-track">
+                    <div class="service-card-carousel">
+                        <div class="carousel-card-content">
+                            <h4>Peptide Infusion</h4>
+                            <p>A powerful anti-aging treatment to boost collagen and restore elasticity for visibly firmer skin.</p>
+                            <a href="#contact" class="card-cta">Book Now <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="service-card-carousel">
+                        <div class="carousel-card-content">
+                            <h4>Oxygen Dome Facial</h4>
+                            <p>Revitalize tired skin with a nourishing blast of pure oxygen, promoting healing and radiance.</p>
+                             <a href="#contact" class="card-cta">Book Now <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="service-card-carousel">
+                        <div class="carousel-card-content">
+                            <h4>Detoxifying Clay Wrap</h4>
+                            <p>Purify and soften your skin from head to toe with our mineral-rich, botanical clay treatment.</p>
+                             <a href="#contact" class="card-cta">Book Now <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="service-card-carousel">
+                        <div class="carousel-card-content">
+                            <h4>Vitamin C Brightening</h4>
+                            <p>Combat hyperpigmentation and environmental damage with a potent, antioxidant-rich facial.</p>
+                             <a href="#contact" class="card-cta">Book Now <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                     <div class="service-card-carousel">
+                        <div class="carousel-card-content">
+                            <h4>Lymphatic Drainage</h4>
+                            <p>A gentle, rhythmic massage to reduce puffiness, detoxify, and improve circulation for a healthy glow.</p>
+                             <a href="#contact" class="card-cta">Book Now <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-nav prev" aria-label="Previous service"><i class="fas fa-chevron-left"></i></button>
+            <button class="carousel-nav next" aria-label="Next service"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+</section>
+        <!-- </div> -->
+        <!-- <div id="results"> -->
+    <section  id="results" class="results-section">
+        <div class="results-bg-particles">
+            <span class="particle"></span><span class="particle"></span><span class="particle"></span>
+            <span class="particle"></span><span class="particle"></span><span class="particle"></span>
+        </div>
+
+        <div class="results-container">
+            <div class="section-header anim-group">
+                <h2 class="section-title" data-animate-title>Before & After Transformations</h2>
+                <p class="section-subtitle">Real Results. Real Confidence.</p>
+            </div>
+
+            <div class="results-grid">
+                <div class="transformation-card anim-group">
+                    <div class="comparison-slider" data-touch-label="Tap to Reveal">
+                        <div class="image-before">
+                            <img src="https://placehold.co/600x800/d3d3d3/808080?text=Before:+Acne" alt="Before skincare treatment for acne" loading="lazy">
+                        </div>
+                        <div class="image-after">
+                            <img src="https://placehold.co/600x800/F8C8DC/333?text=After:+Clear+Skin" alt="After skincare treatment for acne" loading="lazy">
+                        </div>
+                        <div class="slider-handle" aria-label="Drag to compare">
+                            <div class="slider-flare"></div>
+                        </div>
+                    </div>
+                    <div class="card-caption">
+                        <h3>Acne Clearing Treatment</h3>
+                        <p class="testimonial-quote">"My skin has never felt this clear. I finally have my confidence back."</p>
+                    </div>
+                </div>
+
+                <div class="transformation-card anim-group">
+                    <div class="comparison-slider" data-touch-label="Tap to Reveal">
+                        <div class="image-before">
+                            <img src="https://placehold.co/600x800/d3d3d3/808080?text=Before:+Dullness" alt="Before skincare treatment for dullness" loading="lazy">
+                        </div>
+                        <div class="image-after">
+                            <img src="https://placehold.co/600x800/A8E6CF/333?text=After:+Radiant+Glow" alt="After skincare treatment for dullness" loading="lazy">
+                        </div>
+                        <div class="slider-handle" aria-label="Drag to compare">
+                            <div class="slider-flare"></div>
+                        </div>
+                    </div>
+                    <div class="card-caption">
+                        <h3>HydraGlow Facial Series</h3>
+                        <p class="testimonial-quote">"The glow is real! My skin looks and feels completely rejuvenated."</p>
+                    </div>
+                </div>
+                
+                <div class="transformation-card anim-group">
+                    <div class="comparison-slider" data-touch-label="Tap to Reveal">
+                        <div class="image-before">
+                            <img src="https://placehold.co/600x800/d3d3d3/808080?text=Before:+Fine+Lines" alt="Before skincare treatment for fine lines" loading="lazy">
+                        </div>
+                        <div class="image-after">
+                            <img src="https://placehold.co/600x800/E6E6FA/333?text=After:+Smoothed+Texture" alt="After skincare treatment for fine lines" loading="lazy">
+                        </div>
+                         <div class="slider-handle" aria-label="Drag to compare">
+                            <div class="slider-flare"></div>
+                        </div>
+                    </div>
+                    <div class="card-caption">
+                        <h3>Lumière LED Therapy</h3>
+                        <p class="testimonial-quote">"The fine lines around my eyes have softened so much. It's like turning back time."</p>
+                    </div>
+                </div>
+
+                <div class="transformation-card anim-group">
+                     <div class="comparison-slider" data-touch-label="Tap to Reveal">
+                        <div class="image-before">
+                             <img src="https://placehold.co/600x800/d3d3d3/808080?text=Before:+Sun+Damage" alt="Before skincare treatment for sun damage" loading="lazy">
+                        </div>
+                        <div class="image-after">
+                             <img src="https://placehold.co/600x800/FFD700/333?text=After:+Even+Tone" alt="After skincare treatment for sun damage" loading="lazy">
+                        </div>
+                        <div class="slider-handle" aria-label="Drag to compare">
+                            <div class="slider-flare"></div>
+                        </div>
+                    </div>
+                    <div class="card-caption">
+                        <h3>Vitamin C Brightening</h3>
+                        <p class="testimonial-quote">"My sun spots have faded and my complexion is so much more even."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- </div> -->
+<div id="reviews" class="testimonials-orbit-container">
+    <div class="background-effects">
+        <div class="particle-system"></div>
+    </div>
+    
+    <div class="main-content-wrapper">
+        <div class="central-testimonial-orb">
+            <div class="quote-icon">❝</div>
+            <div class="testimonial-content">
+                <img src="https://placehold.co/120x120/A8E6CF/ffffff" alt="Client Photo" class="client-photo" />
+                <p class="testimonial-text">
+                    "I didn’t recognize myself — in the best way. Subtle, natural, confident!"
+                </p>
+                <div class="client-details">
+                    <span class="client-name">Sarah Q.</span>
+                    <span class="service-name">Botox & PRP</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="orbital-ring">
+            <div class="orbiting-card" data-index="0">
+                <img src="https://placehold.co/80x80/F8C8DC/000000" alt="Testimonial Photo" class="orbiting-photo" />
+            </div>
+            <div class="orbiting-card" data-index="1">
+                <img src="https://placehold.co/80x80/A8E6CF/ffffff" alt="Testimonial Photo" class="orbiting-photo" />
+            </div>
+            <div class="orbiting-card" data-index="2">
+                <img src="https://placehold.co/80x80/FFD700/ffffff" alt="Testimonial Photo" class="orbiting-photo" />
+            </div>
+            <div class="orbiting-card" data-index="3">
+                <img src="https://placehold.co/80x80/F8C8DC/ffffff" alt="Testimonial Photo" class="orbiting-photo" />
+            </div>
+            <div class="orbiting-card" data-index="4">
+                <img src="https://placehold.co/80x80/A8E6CF/000000" alt="Testimonial Photo" class="orbiting-photo" />
+            </div>
+        </div>
+    </div>
+
+    <div class="nav-buttons">
+        <button class="nav-button arrow-left">←</button>
+        <button class="nav-button arrow-right">→</button>
+    </div>
+</div>
+        <div id="contact-luxe-section" id ="contact">
+    <!-- Cinematic background atmosphere with floating particles -->
+    <div class="background-atmosphere">
+        <div class="particle-field"></div>
+    </div>
+
+    <!-- The main content layout -->
+    <div class="main-layout-container">
+        <!-- Left Panel: Headline & Subtext -->
+        <div class="left-panel">
+            <h2 class="section-headline">Let’s Enhance Your Glow.</h2>
+            <p class="section-subtext">Reach out, consult, or book your session. We’re here for your transformation.</p>
+        </div>
+        
+        <!-- Right Panel: Floating Contact Card -->
+        <div class="right-panel">
+            <div class="contact-card">
+                <div class="card-glow"></div>
+                <div class="card-shimmer"></div>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service of Interest</label>
+                        <div class="dropdown-wrapper">
+                            <select id="service" name="service" style="background-color: rgba(214, 233, 131, 0.904);">
+                                <option value="" disabled selected>Select a Service</option>
+                                <option value="hydrafacial">Hydrafacial</option>
+                                <option value="botox">Botox & Fillers</option>
+                                <option value="prp">PRP Treatment</option>
+                                <option value="laser">Laser Therapy</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="3" placeholder="I'm interested in a consultation..."></textarea>
+                    </div>
+                </form>
+                <button class="booking-cta">
+                    <span class="cta-text">Book a Session</span>
+                    <div class="cta-halo"></div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Floating Glassmorphic Booking Modal -->
+    <div id="booking-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close-btn">&times;</button>
+            <h3 class="modal-title">Select Your Time</h3>
+            <div class="calendar-placeholder">
+                <p  style="color: aliceblue !important;">Placeholder for a Calendly-style calendar</p>
+                <div class="day-picker">
+                    <div class="day">Mon, 25</div>
+                    <div class="day selected">Tue, 26</div>
+                    <div class="day">Wed, 27</div>
+                </div>
+                <div class="time-slots">
+                    <span class="slot">9:00 AM</span>
+                    <span class="slot">10:30 AM</span>
+                    <span class="slot selected">1:00 PM</span>
+                    <span class="slot">2:30 PM</span>
+                </div>
+            </div>
+            <button class="confirm-btn">Confirm Booking</button>
+        </div>
+    </div>
+</div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-column footer-intro anim-on-scroll">
+                <h3 class="logo">GlowCare Clinic</h3>
+                <p>Experience the future of skincare, where luxury meets innovation.</p>
+            </div>
+
+            <div class="footer-column footer-links anim-on-scroll">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#results">Results</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact-luxe-section">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column footer-contact anim-on-scroll">
+                <h4>Contact Us</h4>
+                <p>webnoro</p>
+                <p>
+                    <a href="tel:+1234567890">+92 319 0560306</a><br>
+                    <a href="mailto:hello@webnoro.com">hello@webnoro.com</a>
+                </p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column footer-newsletter anim-on-scroll">
+                <h4>Stay Glowing</h4>
+                <p>Subscribe for exclusive offers and skincare insights.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Webnoro. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+<!-- Popup -->
+  <div id="demo-popup">
+    <div class="popup-content">
+      <img src="popup.png" alt="Demo Only Popup" />
+    </div>
+  </div>
+
+  <script>
+    const popup = document.getElementById('demo-popup');
+
+    // Close popup on any click (even image)
+    popup.addEventListener('click', () => {
+      popup.style.display = 'none';
+    });
+
+    // Optional: Add delay before popup shows (e.g., 500ms)
+    // setTimeout(() => popup.style.display = 'flex', 500);
+  </script>
+
+  <style>
+        /* Popup Styles */
+    #demo-popup {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(8px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      transition: opacity 0.3s ease;
+    }
+
+    .popup-content {
+      max-width: 90%;
+      width: 400px;
+      max-height: 90%;
+      border-radius: 16px;
+      box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .popup-content img {
+      width: 100%;
+      height: auto;
+      display: block;
+      cursor: pointer;
+    }
+
+  </style>
+</body>
+</html>
